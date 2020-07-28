@@ -1,11 +1,10 @@
-# Snake Game 
-## Bootcamp SPTech Desenvolvimento Front-end (DIO)
+# Thainaflix
+## Imersão React - Alura
 
-###### Este repositório foi criado a fim de se cumprir o Desafio de Projeto do módulo de JavaScript.
-###### Bootcamp da plataforma da Digital Innovation One, segundo vídeoaulas da dev. Gabriela Pinheiro.
+###### Este repositório foi criado a fim de se registar o projeto com o decorrer das aulas da imersão.
 
 ###### Obrigada!
 ###### :sparkles:
 
-### Após clonar o repositório:
-### `yarn start`
+###### Para rodar o projeto após clonar o repositório:
+###### `yarn start`
