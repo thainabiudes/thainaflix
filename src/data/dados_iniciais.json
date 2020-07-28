@@ -66,32 +66,28 @@
       ]
     },
     {
-      "titulo": "Aprendendo a aprender tecnologia",
+      "titulo": "Reality Shows",
       "cor": "#6b5be2",
-      "link_extra": {
-        "text": "Curso sobre aprendizado na Alura",
-        "url": "https://alura.com.br/curso-online-aprender-a-aprender-tecnicas-para-seu-autodesenvolvimento"
-      },
       "videos": [
         {
-          "titulo": "Como estudar melhor?",
-          "url": "https://www.youtube.com/watch?v=Is6c9KSGCbk&feature=youtu.be"
+          "titulo": "Largados e Pelados",
+          "url": "https://www.youtube.com/watch?v=O0K7d_6MziE"
         },
         {
-          "titulo": "Faculdade",
-          "url": "https://www.youtube.com/watch?v=jw06H8esyzQ&feature=youtu.be"
+          "titulo": "Soltos em Floripa",
+          "url": "https://www.youtube.com/watch?v=AtxsEZGa0LY"
         },
         {
-          "titulo": "Frameworks",
-          "url": "https://www.youtube.com/watch?v=QzDjdlF1BQI"
+          "titulo": "De Férias com o Ex Brasil",
+          "url": "https://www.youtube.com/watch?v=4n2s-lcPkZI"
         },
         {
-          "titulo": "A mágica do Aprendizado",
-          "url": "https://www.youtube.com/watch?v=oTEXzpfEpPY"
+          "titulo": "O Crush Perfeito",
+          "url": "https://www.youtube.com/watch?v=yvHE13SqGuw"
         },
         {
-          "titulo": "Como aprender a programar?",
-          "url": "https://www.youtube.com/watch?v=MwCx2qKdbDw&feature=youtu.be"
+          "titulo": "Masterchef Brasil",
+          "url": "https://www.youtube.com/watch?v=H5nDeKa3zhs"
         }
       ]
     },
