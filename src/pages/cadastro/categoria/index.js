@@ -43,7 +43,7 @@ function CadastroCategoria(){
         const resposta = await respostaDoServidor.json();
         setCategorias(resposta)
       });
-  }, [values.nome]);
+  }, []);
 
   return (
     <PageDefault>
