@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
-import Button from '../../../components/Button/styles';
+import Button, { WrapperButton } from '../../../components/Button/styles';
 import { Link } from 'react-router-dom';
 
 function CadastroCategoria(){
@@ -70,9 +70,11 @@ function CadastroCategoria(){
           label="Cor:"
         />
 
-        <Button style={{ background: "#141414", width: "145px", marginLeft: '50vh'}} >
-          Cadastrar
-        </Button>
+        <WrapperButton>
+          <Button style={{ background: "#141414", width: "143px" }} >
+            Cadastrar
+          </Button>
+        </WrapperButton>
       
       </form>
       
@@ -85,10 +87,11 @@ function CadastroCategoria(){
           )
         })}
       </ul>
-
-      <Button as={Link} to="/" style={{ marginBottom: '25px', width: "145px", marginLeft: '50vh'}}>
-        Ir para home
-      </Button> 
+      <WrapperButton>
+        <Button as={Link} to="/" style={{ marginBottom: "25px" }}>
+          Ir para home
+        </Button> 
+      </WrapperButton>
     </PageDefault>
   );
 }

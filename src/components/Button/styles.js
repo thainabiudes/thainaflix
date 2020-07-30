@@ -23,4 +23,12 @@ const Button = styled.button`
   }
 `;
 
+export const WrapperButton = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  
+`;
+
 export default Button;

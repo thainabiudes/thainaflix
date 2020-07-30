@@ -21,6 +21,7 @@ export const Input = styled.input`
   background-color: transparent;
   color: white;
   border-color: var(--primary);
+  height: 30px;
   
   @media (min-width: 800px) {
   }
