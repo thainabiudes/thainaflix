@@ -1,0 +1,17 @@
+  
+{
+  "categorias": [
+    {
+      "id": 1,
+      "titulo": "Cachorros",
+      "cor": "#6BD1FF",
+      "descricao": "Uma categoria dos melhores amigos do homem."
+    },
+    {
+      "id": 2,
+      "titulo": "Filmes",
+      "cor": "#141414",
+      "descricao": "Uma categoria dos filmes que prendem a atenção."
+    }
+  ]
+}
