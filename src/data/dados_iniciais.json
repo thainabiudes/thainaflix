@@ -1,67 +1,70 @@
 {
   "categorias": [
     {
-      "titulo": "Front End",
-      "link": "https://www.alura.com.br/formacao-front-end",
+      "titulo": "Cachorros",
       "cor": "#6BD1FF",
       "videos": [
         {
-          "titulo": "O que faz uma desenvolvedora front-end? #HipstersPontoTube",
-          "url": "https://www.youtube.com/watch?v=ZY3-MFxVdEw"
+          "titulo": "BULL TERRIER - Curiosidades sobre a raça",
+          "url": "https://www.youtube.com/watch?v=ZOdc4PVFz8U"
         },
         {
-          "titulo": "SEO com React",
-          "url": "https://www.youtube.com/watch?v=c8mVlakBESE"
+          "titulo": "VIRA LATA - Tudo sobre a raça",
+          "url": "https://www.youtube.com/watch?v=bbxvunVEHp4"
         },
         {
-          "titulo": "Componentização com VanillaJS #AluraMais",
-          "url": "https://www.youtube.com/watch?v=LatCKpcOMak"
+          "titulo": "PITBULL - Saúde, Temperamento, Dicas e Curiosidade",
+          "url": "https://www.youtube.com/watch?v=ZLpIAHl4PjI"
         },
         {
-          "titulo": "Pare de chutar e aprenda a display: inline #01",
-          "url": "https://www.youtube.com/watch?v=5PS6ku8NzIE"
+          "titulo": "PINSCHER - Tudo sobre a raça",
+          "url": "https://www.youtube.com/watch?v=DSew2-IODPg"
         },
         {
-          "titulo": "Template String: Interpolando strings com JavaScript #AluraMais",
-          "url": "https://www.youtube.com/watch?v=ORI_HTXaIw0"
+          "titulo": "PASTOR ALEMÃO - Características e Cuidados",
+          "url": "https://www.youtube.com/watch?v=MmTDfl5Fmhk"
         },
         {
-          "titulo": "Qual é a melhor linguagem de programação? #HipstersPontoTube",
-          "url": "https://www.youtube.com/watch?v=Uh-GNH-t89w"
+          "titulo": "AMERICAN BULLY - Tudo sobre a raça",
+          "url": "https://www.youtube.com/watch?v=GJG6okR-jAw"
         },
         {
-          "titulo": "Novidades do Angular v9",
-          "url": "https://www.youtube.com/watch?v=34uHo7hFmG0"
+          "titulo": "BULLDOG FRANCÊS - Por dentro da raça",
+          "url": "https://www.youtube.com/watch?v=ZJGrhKxyAgI"
         },
         {
-          "titulo": "Base para aprender os frameworks",
-          "url": "https://www.youtube.com/watch?v=QzDjdlF1BQI"
+          "titulo": "GALGO INGLÊS - Tudo sobre a raça",
+          "url": "https://www.youtube.com/watch?v=q2R1i2h4FEA&t=168s"
         }        
       ]
     },
     {
-      "titulo": "Back End",
+      "titulo": "Animações",
       "cor": "#00C86F",
       "videos": [
         {
-          "titulo": "PERCURSO em NÍVEL em ÁRVORE BINÁRIA | Estruturas de Dados #14",
-          "url": "https://www.youtube.com/watch?v=UOK7nS2E9xM"
+          "titulo": "Rio",
+          "url": "https://www.youtube.com/watch?v=P1GRO31ve5Q"
         },
         {
-          "titulo": "Coders4Tips - S01E04: GitHub CLI - Uma Nova Experiência no Github!",
-          "url": "https://www.youtube.com/watch?v=6o6-bKOZOEY"
+          "titulo": "Valente",
+          "url": "https://www.youtube.com/watch?v=vHOC1Kd_zhw"
         },
         {
-          "titulo": "Programei 4 robôs que criam vídeos para mim no YouTube",
-          "url": "https://www.youtube.com/watch?v=kjhu1LEmRpY"
+          "titulo": "A Era do Gelo",
+          "url": "https://www.youtube.com/watch?v=wuYXN78XTHA"
         },
         {
-          "titulo": "API: Dicionário do Programador",
-          "url": "https://www.youtube.com/watch?v=vGuqKIRWosk"
+          "titulo": "Monstros S.A.",
+          "url": "https://www.youtube.com/watch?v=iRh2kF-1X2E"
         }, 
         {
-          "titulo": "Usando Git Direito",
-          "url": "https://www.youtube.com/watch?v=6OokP-NE49k"
+          "titulo": "Vida de Inseto",
+          "url": "https://www.youtube.com/watch?v=znXehHytQcM"
+        }, 
+        {
+          "titulo": "Universidade Monstros",
+          "url": "https://www.youtube.com/watch?v=elKdcx9ar3k"
         }
       ]
     },
@@ -79,11 +82,19 @@
         },
         {
           "titulo": "De Férias com o Ex Brasil",
-          "url": "https://www.youtube.com/watch?v=4n2s-lcPkZI"
+          "url": "https://www.youtube.com/watch?v=lKRsV9WuGTo"
         },
         {
           "titulo": "O Crush Perfeito",
           "url": "https://www.youtube.com/watch?v=yvHE13SqGuw"
+        },
+        {
+          "titulo": "Brincando com Fogo",
+          "url": "https://www.youtube.com/watch?v=zl7Ij0Ny4Zs"
+        },
+        {
+          "titulo": "Love is Blind",
+          "url": "https://www.youtube.com/watch?v=s2eBAFt3L_0"
         },
         {
           "titulo": "Masterchef Brasil",
@@ -134,8 +145,36 @@
           "url": "https://www.youtube.com/watch?v=QUXS0TxmnQQ"
         },
         {
+          "titulo": "Harry Potter e a Pedra Filosofal",
+          "url": "https://www.youtube.com/watch?v=VyHV0BRtdxo"
+        },
+        {
+          "titulo": "Harry Potter e a Câmara Secreta",
+          "url": "https://www.youtube.com/watch?v=7ZBh_-Aa0Bk"
+        },
+        {
+          "titulo": "Harry Potter e o Prisioneiro de Azkaban",
+          "url": "https://www.youtube.com/watch?v=V_JtCbmkPA0"
+        },
+        {
           "titulo": "Harry Potter e o Cálice de Fogo",
           "url": "https://www.youtube.com/watch?v=vkKnH6fy4Vg"
+        },
+        {
+          "titulo": "Harry Potter e a Ordem da Fênix",
+          "url": "https://www.youtube.com/watch?v=Tbv2Al6LGW8"
+        },
+        {
+          "titulo": "Harry Potter e o Enigma do Príncipe",
+          "url": "https://www.youtube.com/watch?v=wgkHfUaG1nI"
+        },
+        {
+          "titulo": "Harry Potter e as Relíquias da Morte: Parte 1",
+          "url": "https://www.youtube.com/watch?v=-_GftUTRWHM"
+        },
+        {
+          "titulo": "Harry Potter e as Relíquias da Morte: Parte 2",
+          "url": "https://www.youtube.com/watch?v=ot8XLjUpbEk"
         }
       ]
     },
@@ -158,6 +197,14 @@
         {
           "titulo": "Super Bomberman R",
           "url": "https://www.youtube.com/watch?v=U66jyrdJLSs"
+        },
+        {
+          "titulo": "Runescape 3",
+          "url": "https://www.youtube.com/watch?v=3UW8Q-DztjU"
+        },
+        {
+          "titulo": "AdventureQuest Worlds",
+          "url": "https://www.youtube.com/watch?v=wI_2OSuf_0A"
         }
       ]
     }
