@@ -4,20 +4,24 @@ import FormField from '../../../components/FormField';
 import Button, { WrapperButton } from '../../../components/Button/styles';
 import { Link } from 'react-router-dom';
 
-function CadastroCategoria(){
+function CadastroCategoria() {
   const valoresIniciais = {
     nome: '',
     descricao: '',
     cor: '',
   }
 
+  const URL = window.location.hostname.includes('localhost')
+    ? 'http://localhost:8080/categorias'
+    : 'https://thainaflix.herokuapp.com/categorias'
+
   const [categorias, setCategorias] = useState([]);
   const [values, setValues] = useState(valoresIniciais);
 
-  function setValue(chave,value){
+  function setValue(chave, value) {
     setValues({
       ...values,
-      [chave]: value, 
+      [chave]: value,
     })
   }
 
@@ -27,19 +31,33 @@ function CadastroCategoria(){
       e.target.value)
   }
 
-  function handleSubmit(e){
+  function handleSubmit(e) {
     e.preventDefault();
     setCategorias([
       ...categorias,
       values
     ]);
+    addCategory();
     setValues(valoresIniciais);
   }
 
+  function addCategory(){
+    fetch(URL, {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(values)
+    }).then(async (response) => {
+      const resposta = await response;
+      if(resposta.status === 201) {
+        alert('deu');
+      };
+    });
+  }
+  
   useEffect(() => {
-    const URL = window.location.hostname.includes('localhost') 
-    ? 'http://localhost:8080/categorias'
-    : 'https://thainaflix.herokuapp.com/categorias' 
     fetch(URL)
       .then(async (respostaDoServidor) => {
         const resposta = await respostaDoServidor.json();
@@ -51,34 +69,34 @@ function CadastroCategoria(){
 
   return (
     <PageDefault>
-      <h1 style={{ alignItens: 'center'}}>
-        Cadastro de Categoria: 
+      <h1 style={{ alignItens: 'center' }}>
+        Cadastro de Categoria:
       </h1>
 
       <form onSubmit={handleSubmit}>
         <FormField
           input={true}
-          value={values.nome} 
+          value={values.nome}
           onChange={handleChange}
-          type="text" 
+          type="text"
           name="nome"
           label="Nome da Categoria:"
         />
 
         <FormField
           input={false}
-          value={values.descricao} 
+          value={values.descricao}
           onChange={handleChange}
-          type="text" 
+          type="text"
           name="descricao"
           label="Descrição:"
         />
 
         <FormField
           input={true}
-          value={values.cor} 
+          value={values.cor}
           onChange={handleChange}
-          type="color" 
+          type="color"
           name="cor"
           label="Cor:"
         />
@@ -88,7 +106,7 @@ function CadastroCategoria(){
             Cadastrar
           </Button>
         </WrapperButton>
-      
+
       </form>
 
       {categorias.length === 0 && (
@@ -96,7 +114,7 @@ function CadastroCategoria(){
           Loading...
         </div>
       )}
-      
+
       <ul>
         {categorias.map((categoria, indice) => {
           return (
@@ -109,7 +127,7 @@ function CadastroCategoria(){
       <WrapperButton>
         <Button as={Link} to="/" style={{ marginBottom: "25px" }}>
           Ir para home
-        </Button> 
+        </Button>
       </WrapperButton>
     </PageDefault>
   );
