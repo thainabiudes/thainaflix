@@ -3,15 +3,15 @@
   "categorias": [
     {
       "id": 1,
-      "titulo": "Cachorros",
-      "cor": "#6BD1FF",
-      "descricao": "Uma categoria dos melhores amigos do homem."
+      "nome": "Cachorros",
+      "descricao": "Uma categoria dos melhores amigos do homem.",
+      "cor": "#6BD1FF"
     },
     {
       "id": 2,
-      "titulo": "Filmes",
-      "cor": "#141414",
-      "descricao": "Uma categoria dos filmes que prendem a atenção."
+      "nome": "Filmes",
+      "descricao": "Uma categoria dos filmes que prendem a atenção.",
+      "cor": "#141414"
     }
   ]
 }
