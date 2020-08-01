@@ -1,17 +1,324 @@
-  
 {
   "categorias": [
     {
       "id": 1,
-      "nome": "Cachorros",
+      "titulo": "Cachorros",
       "descricao": "Uma categoria dos melhores amigos do homem.",
       "cor": "#6BD1FF"
     },
     {
       "id": 2,
-      "nome": "Filmes",
-      "descricao": "Uma categoria dos filmes que prendem a atenção.",
-      "cor": "#141414"
+      "titulo": "Animações",
+      "descricao": "Uma categoria dos filmes de desenho infantil.",
+      "cor": "#00C86F"
+    },
+    {
+      "id": 3,
+      "titulo": "Reality Shows",
+      "descricao": "Uma categoria dos filmes de desenho infantil.",
+      "cor": "#6b5be2"
+    },
+    {
+      "id": 4,
+      "titulo": "Culinária",
+      "descricao": "Uma categoria dos filmes de desenho infantil.",
+      "cor": "#9cd33b"
+    },
+    {
+      "id": 5,
+      "titulo": "Filmes",
+      "descricao": "Uma categoria dos filmes de desenho infantil.",
+      "cor": "#orange"
+    },
+    {
+      "id": 6,
+      "titulo": "Games",
+      "descricao": "Uma categoria dos filmes de desenho infantil.",
+      "cor": "#red"
+    },
+    {
+      "titulo": "Séries",
+      "descricao": "",
+      "cor": "",
+      "id": 7
+    }
+  ],
+  "videos": [
+    {
+      "id": 1,
+      "categoriaId": 1,
+      "titulo": "BULL TERRIER - Curiosidades sobre a raça",
+      "url": "https://www.youtube.com/watch?v=ZOdc4PVFz8U"
+    },
+    {
+      "id": 2,
+      "categoriaId": 1,
+      "titulo": "VIRA LATA - Tudo sobre a raça",
+      "url": "https://www.youtube.com/watch?v=bbxvunVEHp4"
+    },
+    {
+      "id": 3,
+      "categoriaId": 1,
+      "titulo": "PITBULL - Saúde, Temperamento, Dicas e Curiosidade",
+      "url": "https://www.youtube.com/watch?v=ZLpIAHl4PjI"
+    },
+    {
+      "id": 4,
+      "categoriaId": 1,
+      "titulo": "PINSCHER - Tudo sobre a raça",
+      "url": "https://www.youtube.com/watch?v=DSew2-IODPg"
+    },
+    {
+      "id": 5,
+      "categoriaId": 1,
+      "titulo": "PASTOR ALEMÃO - Características e Cuidados",
+      "url": "https://www.youtube.com/watch?v=MmTDfl5Fmhk"
+    },
+    {
+      "id": 6,
+      "categoriaId": 1,
+      "titulo": "AMERICAN BULLY - Tudo sobre a raça",
+      "url": "https://www.youtube.com/watch?v=GJG6okR-jAw"
+    },
+    {
+      "id": 7,
+      "categoriaId": 1,
+      "titulo": "BULLDOG FRANCÊS - Por dentro da raça",
+      "url": "https://www.youtube.com/watch?v=ZJGrhKxyAgI"
+    },
+    {
+      "id": 8,
+      "categoriaId": 1,
+      "titulo": "GALGO INGLÊS - Tudo sobre a raça",
+      "url": "https://www.youtube.com/watch?v=q2R1i2h4FEA&t=168s"
+    },
+    {
+      "id": 9,
+      "categoriaId": 6,
+      "titulo": "Red Dead Redemption 2",
+      "url": "https://www.youtube.com/watch?v=WDvFz2LL1WI"
+    },
+    {
+      "id": 10,
+      "categoriaId": 6,
+      "titulo": "Crash Bandicoot N. Sane Trilogy",
+      "url": "https://www.youtube.com/watch?v=F7G91RjVmvk"
+    },
+    {
+      "id": 11,
+      "categoriaId": 6,
+      "titulo": "Days Gone",
+      "url": "https://www.youtube.com/watch?v=FKtaOY9lMvM"
+    },
+    {
+      "id": 12,
+      "categoriaId": 6,
+      "titulo": "Super Bomberman R",
+      "url": "https://www.youtube.com/watch?v=U66jyrdJLSs"
+    },
+    {
+      "id": 13,
+      "categoriaId": 6,
+      "titulo": "Runescape 3",
+      "url": "https://www.youtube.com/watch?v=3UW8Q-DztjU"
+    },
+    {
+      "id": 14,
+      "categoriaId": 6,
+      "titulo": "AdventureQuest Worlds",
+      "url": "https://www.youtube.com/watch?v=wI_2OSuf_0A"
+    },
+    {
+      "id": 15,
+      "categoriaId": 5,
+      "titulo": "Fragmentado",
+      "url": "https://www.youtube.com/watch?v=7scx2clLzUM"
+    },
+    {
+      "id": 16,
+      "categoriaId": 5,
+      "titulo": "O Homem nas Trevas",
+      "url": "https://www.youtube.com/watch?v=1pkkD0Q7rm4"
+    },
+    {
+      "id": 17,
+      "categoriaId": 5,
+      "titulo": "Jurassic World: O Mundo dos Dinossauros",
+      "url": "https://www.youtube.com/watch?v=QUXS0TxmnQQ"
+    },
+    {
+      "id": 18,
+      "categoriaId": 5,
+      "titulo": "Harry Potter e a Pedra Filosofal",
+      "url": "https://www.youtube.com/watch?v=VyHV0BRtdxo"
+    },
+    {
+      "id": 19,
+      "categoriaId": 5,
+      "titulo": "Harry Potter e a Câmara Secreta",
+      "url": "https://www.youtube.com/watch?v=7ZBh_-Aa0Bk"
+    },
+    {
+      "id": 20,
+      "categoriaId": 5,
+      "titulo": "Harry Potter e o Prisioneiro de Azkaban",
+      "url": "https://www.youtube.com/watch?v=V_JtCbmkPA0"
+    },
+    {
+      "id": 21,
+      "categoriaId": 5,
+      "titulo": "Harry Potter e o Cálice de Fogo",
+      "url": "https://www.youtube.com/watch?v=vkKnH6fy4Vg"
+    },
+    {
+      "id": 22,
+      "categoriaId": 5,
+      "titulo": "Harry Potter e a Ordem da Fênix",
+      "url": "https://www.youtube.com/watch?v=Tbv2Al6LGW8"
+    },
+    {
+      "id": 23,
+      "categoriaId": 5,
+      "titulo": "Harry Potter e o Enigma do Príncipe",
+      "url": "https://www.youtube.com/watch?v=wgkHfUaG1nI"
+    },
+    {
+      "id": 24,
+      "categoriaId": 5,
+      "titulo": "Harry Potter e as Relíquias da Morte: Parte 1",
+      "url": "https://www.youtube.com/watch?v=-_GftUTRWHM"
+    },
+    {
+      "id": 25,
+      "categoriaId": 5,
+      "titulo": "Harry Potter e as Relíquias da Morte: Parte 2",
+      "url": "https://www.youtube.com/watch?v=ot8XLjUpbEk"
+    },
+    {
+      "id": 26,
+      "categoriaId": 4,
+      "titulo": "Que Seja Doce",
+      "url": "https://www.youtube.com/watch?v=K1bLxKoC73Q"
+    },
+    {
+      "id": 27,
+      "categoriaId": 4,
+      "titulo": "Churrasqueadas",
+      "url": "https://www.youtube.com/watch?v=L-DTcYqe4nI"
+    },
+    {
+      "id": 28,
+      "categoriaId": 4,
+      "titulo": "Tempero de Família",
+      "url": "https://www.youtube.com/watch?v=TWuCpLfU4Po"
+    },
+    {
+      "id": 29,
+      "categoriaId": 4,
+      "titulo": "Rainha da Cocada",
+      "url": "https://www.youtube.com/watch?v=dHtev8l2mWU"
+    },
+    {
+      "id": 30,
+      "categoriaId": 4,
+      "titulo": "Bela Cozinha",
+      "url": "https://www.youtube.com/watch?v=iAXr6icqTDs"
+    },
+    {
+      "id": 31,
+      "categoriaId": 3,
+      "titulo": "Largados e Pelados",
+      "url": "https://www.youtube.com/watch?v=O0K7d_6MziE"
+    },
+    {
+      "id": 32,
+      "categoriaId": 3,
+      "titulo": "Soltos em Floripa",
+      "url": "https://www.youtube.com/watch?v=AtxsEZGa0LY"
+    },
+    {
+      "id": 33,
+      "categoriaId": 3,
+      "titulo": "De Férias com o Ex Brasil",
+      "url": "https://www.youtube.com/watch?v=lKRsV9WuGTo"
+    },
+    {
+      "id": 34,
+      "categoriaId": 3,
+      "titulo": "O Crush Perfeito",
+      "url": "https://www.youtube.com/watch?v=yvHE13SqGuw"
+    },
+    {
+      "id": 35,
+      "categoriaId": 3,
+      "titulo": "Brincando com Fogo",
+      "url": "https://www.youtube.com/watch?v=zl7Ij0Ny4Zs"
+    },
+    {
+      "id": 36,
+      "categoriaId": 3,
+      "titulo": "Love is Blind",
+      "url": "https://www.youtube.com/watch?v=s2eBAFt3L_0"
+    },
+    {
+      "id": 37,
+      "categoriaId": 3,
+      "titulo": "Masterchef Brasil",
+      "url": "https://www.youtube.com/watch?v=H5nDeKa3zhs"
+    },
+    {
+      "id": 38,
+      "categoriaId": 2,
+      "titulo": "Rio",
+      "url": "https://www.youtube.com/watch?v=P1GRO31ve5Q"
+    },
+    {
+      "id": 39,
+      "categoriaId": 2,
+      "titulo": "Valente",
+      "url": "https://www.youtube.com/watch?v=vHOC1Kd_zhw"
+    },
+    {
+      "id": 40,
+      "categoriaId": 2,
+      "titulo": "A Era do Gelo",
+      "url": "https://www.youtube.com/watch?v=wuYXN78XTHA"
+    },
+    {
+      "id": 41,
+      "categoriaId": 2,
+      "titulo": "Monstros S.A.",
+      "url": "https://www.youtube.com/watch?v=iRh2kF-1X2E"
+    },
+    {
+      "id": 42,
+      "categoriaId": 2,
+      "titulo": "Vida de Inseto",
+      "url": "https://www.youtube.com/watch?v=znXehHytQcM"
+    },
+    {
+      "id": 43,
+      "categoriaId": 2,
+      "titulo": "Universidade Monstros",
+      "url": "https://www.youtube.com/watch?v=elKdcx9ar3k"
+    },
+    {
+      "titulo": "DOGO ARGENTINO - A Fera dos Hermanos",
+      "url": "https://www.youtube.com/watch?v=z8mrtgaGKpg",
+      "categoriaId": 1,
+      "id": 45
+    },
+    {
+      "titulo": "DACHSHUND - Tudo sobre a raça",
+      "url": "https://www.youtube.com/watch?v=1quADrgpq6U",
+      "categoriaId": 1,
+      "id": 46
+    },
+    {
+      "titulo": "DÁLMATA - Tudo sobre a raça",
+      "url": "https://www.youtube.com/watch?v=KEYWrodsuOA",
+      "categoriaId": 1,
+      "id": 47
     }
   ]
 }

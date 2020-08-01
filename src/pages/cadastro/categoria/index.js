@@ -3,33 +3,22 @@ import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
 import Button, { WrapperButton } from '../../../components/Button/styles';
 import { Link } from 'react-router-dom';
+import useForm from '../../../hooks/useForm'
 
 function CadastroCategoria() {
   const valoresIniciais = {
-    nome: '',
+    titulo: '',
     descricao: '',
     cor: '',
   }
 
-  const URL = window.location.hostname.includes('localhost')
-    ? 'http://localhost:8080/categorias'
-    : 'https://thainaflix.herokuapp.com/categorias'
-
   const [categorias, setCategorias] = useState([]);
-  const [values, setValues] = useState(valoresIniciais);
 
-  function setValue(chave, value) {
-    setValues({
-      ...values,
-      [chave]: value,
-    })
-  }
+  const { handleChange, values, clearForm } = useForm(valoresIniciais)
 
-  function handleChange(e) {
-    setValue(
-      e.target.getAttribute('name'),
-      e.target.value)
-  }
+  const URL = window.location.hostname.includes('localhost')
+  ? 'http://localhost:8080/categorias'
+  : 'https://thainaflix.herokuapp.com/categorias'
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -38,7 +27,7 @@ function CadastroCategoria() {
       values
     ]);
     addCategory();
-    setValues(valoresIniciais);
+    clearForm();
   }
 
   function addCategory(){
@@ -52,7 +41,7 @@ function CadastroCategoria() {
     }).then(async (response) => {
       const resposta = await response;
       if(resposta.status === 201) {
-        alert('deu');
+        console.log('deu');
       };
     });
   }
@@ -76,10 +65,10 @@ function CadastroCategoria() {
       <form onSubmit={handleSubmit}>
         <FormField
           input={true}
-          value={values.nome}
+          value={values.titulo}
           onChange={handleChange}
           type="text"
-          name="nome"
+          name="titulo"
           label="Nome da Categoria:"
         />
 
@@ -119,7 +108,7 @@ function CadastroCategoria() {
         {categorias.map((categoria, indice) => {
           return (
             <li key={`${categoria}${indice}`}>
-              {categoria.nome}
+              {categoria.titulo}
             </li>
           )
         })}

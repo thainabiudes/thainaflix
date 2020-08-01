@@ -2,31 +2,45 @@ import React from 'react';
 import { FormFieldBase, Input, TextArea, Label } from './styles';
 import PropTypes from 'prop-types';
 
-function FormField({ value, onChange, type, name, label, input}){
+function FormField({ value, onChange, type, name, label, input, suggestions}){
+  const fieldId = `id_${name}`;
+  const hasSuggestions = Boolean(suggestions.length)
+
   return (
     <FormFieldBase>
-        <Label>
+        <Label id={fieldId}>
         
         {input 
           ? 
-          <Input type={type} name={name} value={value} onChange={onChange} />
+          <Input type={type} list={hasSuggestions ? `suggestion_${fieldId}` : undefined} autoComplete={hasSuggestions ? 'off' : 'on'} name={name} value={value} onChange={onChange} />
           : 
           <TextArea type={type} name={name} value={value} onChange={onChange} /> 
         }    
 
-        <Label.Text>
-          {label}
-        </Label.Text>
+        <Label.Text>{label}</Label.Text>
 
-        </Label>        
+        {hasSuggestions && (
+          <datalist id={`suggestion_${fieldId}`}>
+            {suggestions.map((suggestion) => (
+              <option
+                value={suggestion}
+                key={`suggestion_${fieldId}_option${suggestion}`}
+              >
+                {suggestion}
+              </option>
+            ))}
+          </datalist>
+        )}
+      </Label>
     </FormFieldBase>
-  );
+  )
 }
 
-FormField.defaultTypes = {
+FormField.defaultProps = {
   type: 'text',
-  name: '',
+  value: '',
   onChange: () => {},
+  suggestions: [],
 }
 
 FormField.propTypes = {
@@ -35,6 +49,7 @@ FormField.propTypes = {
   name: PropTypes.string.isRequired,
   value: PropTypes.string,
   onChange: PropTypes.func,
+  suggestions: PropTypes.arrayOf(PropTypes.string),
 }
 
-export default FormField;
+export default FormField
