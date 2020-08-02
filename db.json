@@ -1,10 +1,10 @@
 {
   "categorias": [
     {
-      "id": 1,
       "titulo": "Cachorros",
-      "descricao": "Uma categoria dos melhores amigos do homem.",
-      "cor": "#6BD1FF"
+      "cor": "#FF4500",
+      "descricao": "Uma categoria dos melhores amigos dos homens.",
+      "id": 1
     },
     {
       "id": 2,
@@ -25,21 +25,21 @@
       "cor": "#9cd33b"
     },
     {
-      "id": 5,
+      "descricao": "Uma categoria dos filmes que me marcaram.",
+      "cor": "#DDA0DD",
       "titulo": "Filmes",
-      "descricao": "Uma categoria dos filmes de desenho infantil.",
-      "cor": "#orange"
+      "id": 5
     },
     {
-      "id": 6,
       "titulo": "Games",
-      "descricao": "Uma categoria dos filmes de desenho infantil.",
-      "cor": "#red"
+      "cor": "#87CEEB",
+      "descricao": "Uma categoria dos jogos que me maravilham.",
+      "id": 6
     },
     {
       "titulo": "Séries",
-      "descricao": "",
-      "cor": "",
+      "descricao": "Uma categoria das melhores séries.",
+      "cor": "#d8e60f",
       "id": 7
     }
   ],

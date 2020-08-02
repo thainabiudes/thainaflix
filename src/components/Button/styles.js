@@ -28,6 +28,8 @@ export const WrapperButton = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
   
 `;
 

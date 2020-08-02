@@ -33,7 +33,7 @@ function CadastroVideo() {
         });
 
         if(validateCategory !== values.categoria){
-          history.push('/error');
+          alert('Categoria digitada está incorreta, tente novamente!')
           return
         }
 
@@ -79,7 +79,7 @@ function CadastroVideo() {
         />
 
    
-          <Button type="submit" >
+          <Button type="submit" style={{ background: "#141414" }}>
             Cadastrar
           </Button>
     
@@ -88,9 +88,13 @@ function CadastroVideo() {
       <br />
       <br />
 
-      <Link to="/cadastro/categoria">
+      <Link to="/cadastro/categoria" >
         Cadastrar Categoria
-    </Link>
+      </Link>
+
+      <br />
+      <br />
+
     </PageDefault>
   );
 }

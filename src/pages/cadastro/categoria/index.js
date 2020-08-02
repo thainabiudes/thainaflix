@@ -1,9 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import PageDefault from '../../../components/PageDefault';
-import FormField from '../../../components/FormField';
-import Button, { WrapperButton } from '../../../components/Button/styles';
 import { Link } from 'react-router-dom';
 import useForm from '../../../hooks/useForm'
+import changeIcon from '../../../assets/images/modifica.png';
+import deleteIcon from '../../../assets/images/delete.png';
+import { Th, Td } from '../../../components/Tabela/styles'; 
+import PageDefault from '../../../components/PageDefault';
+import FormField from '../../../components/FormField';
+import Tabela from '../../../components/Tabela';
+import Button, { WrapperButton } from '../../../components/Button/styles';
 
 function CadastroCategoria() {
   const valoresIniciais = {
@@ -13,12 +17,24 @@ function CadastroCategoria() {
   }
 
   const [categorias, setCategorias] = useState([]);
-
   const { handleChange, values, clearForm } = useForm(valoresIniciais)
-
   const URL = window.location.hostname.includes('localhost')
   ? 'http://localhost:8080/categorias'
   : 'https://thainaflix.herokuapp.com/categorias'
+  
+  useEffect(() => {
+    update();
+  }, []);
+  
+  function update(){
+    fetch(URL)
+    .then(async (respostaDoServidor) => {
+      const resposta = await respostaDoServidor.json();
+      setCategorias([
+        ...resposta,
+      ]);
+    });
+  }
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -45,16 +61,47 @@ function CadastroCategoria() {
       };
     });
   }
+
+  function deleteCategory(e) {
+    let question = window.confirm('Deseja mesmo excluir a categoria?');
+
+    if(question === true){
+      fetch(`${URL}/${e.id}`, {
+      method: 'DELETE',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      })
+      .then(res => res.json()) 
+      .then(res => console.log(res));
+
+      update();
+    }
+  }
   
-  useEffect(() => {
-    fetch(URL)
-      .then(async (respostaDoServidor) => {
-        const resposta = await respostaDoServidor.json();
-        setCategorias([
-          ...resposta,
-        ]);
-      });
-  }, []);
+  function changeCategory(e){
+    let question = prompt('Qual o novo título de categoria?');
+
+    if(question !== null){
+      fetch(`${URL}/${e.id}`, {
+        method: 'PUT',
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          "titulo": question,
+          "cor": e.cor,
+          "descricao": e.descricao,
+        })
+        })
+        .then(res => res.json()) 
+        .then(res => console.log(res));
+        
+        update();
+    }
+  }
 
   return (
     <PageDefault>
@@ -104,15 +151,52 @@ function CadastroCategoria() {
         </div>
       )}
 
-      <ul>
-        {categorias.map((categoria, indice) => {
-          return (
-            <li key={`${categoria}${indice}`}>
-              {categoria.titulo}
-            </li>
-          )
-        })}
-      </ul>
+      <Tabela>
+        <thead>
+          <tr>
+            <Th>
+              {categorias.map((categoria, indice) => {
+                return (
+                  <li key={`${categoria}${indice}`}>
+                    {categoria.titulo}
+                  </li>
+                )
+              })}
+            </Th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <Td>
+            {categorias.map((categoria, indice) => {
+                return (
+                  <li as="link" key={`${categoria}${indice}`}>
+                    <img src={changeIcon} alt="modifica" style={{ cursor: "pointer", width: "18px", heigth: "18px" }} onClick={() => changeCategory(categoria)} />
+                  </li>
+                )
+              })}
+            </Td>
+          </tr>
+        </tbody>
+
+        <tbody>    
+          <tr>
+            <Td>
+            {categorias.map((categoria, indice) => {
+                return (
+                  <li as="link" key={`${categoria}${indice}`}>
+                    <img src={deleteIcon} alt="delete" style={{ cursor: "pointer", width: "20px", heigth: "20px" }} onClick={() => deleteCategory(categoria)}/>
+                  </li>
+                )
+              })}
+            </Td>
+          </tr>
+        </tbody>
+        
+      </Tabela>
+
+
       <WrapperButton>
         <Button as={Link} to="/" style={{ marginBottom: "25px" }}>
           Ir para home
